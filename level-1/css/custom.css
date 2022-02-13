@@ -1,0 +1,86 @@
+/* Variables */
+:root {
+    font-size: 62.5%;
+    --lightColor: #F0F0F0;
+    --blackColor: #121212;
+    --primaryColor: #E4C1AE;
+    --secondaryColor: #FFFFFF;
+    --hoverColor: #e6a17c;
+}
+/* Fonts properties */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+h1, p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--blackColor);
+}
+/* Reset margin and padding */
+.container, .col {
+    padding: 0;
+}
+.row {
+    margin: 0;
+}
+/* Layout properties */
+body {
+    background-color: var(--lightColor);
+}
+.container {
+    margin-top: 10rem;
+}
+.sea {
+    height: 40.8rem;
+    background-color: var(--secondaryColor);
+}
+.sea .img-container {
+    height: 40.8rem;
+    overflow: hidden;
+}
+.sea img {
+    height: 100%;
+    width: 100%;
+}
+.description-container {
+    width: 35rem;
+}
+.description-container p {
+    font-size: 1.6rem;
+    line-height: calc(7.7rem/3);
+    padding-bottom: 3.5rem;
+}
+.description-container .h1 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 5rem;
+    padding-top: 8.6rem;
+    padding-bottom: 4.3rem;
+}
+.btn {
+    width: 13.5rem;
+    height: 4.7rem;
+    border-radius: 4.4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+}
+.btn:hover {
+    background-color: var(--hoverColor);
+}
+/* Media Queries */
+@media (max-width: 767px) {
+    .sea {
+        height: 81.6rem;
+   }
+    .sea .img-container {
+        max-height: 50%;
+   }
+    .sea img {
+        width: 100%;
+        object-fit: cover;
+   }
+}
+@media (max-width: 640px) {
+    :root {
+        font-size: 50%;
+   }
+}

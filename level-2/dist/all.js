@@ -1,0 +1,1 @@
+$(document).ready(function(){$('[data-toggle="tooltip"]').attr("title",()=>{var t=["Click me!","Check me!","I'm the Button!"];return t[Math.floor(Math.random()*t.length)]}).tooltip("toggle").tooltip("hide")});

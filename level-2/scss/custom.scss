@@ -1,0 +1,117 @@
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+@import "colors";
+@import "type";
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+/* Root properties*/
+:root {
+    font-size: 62.5%;
+}
+/* Fonts properties */
+h1, p {
+    font-family: 'Roboto', sans-serif;
+}
+/* Reset margin and padding */
+.container, .col {
+    padding: 0;
+}
+.row {
+    margin: 0;
+}
+/* Layout properties */
+.container {
+    margin-top: 10rem;
+}
+.sea {
+    height: 40.8rem;
+}
+.sea .img-container {
+    height: 40.8rem;
+    overflow: hidden;
+}
+.sea img {
+    height: 100%;
+    width: 100%;
+}
+.description-container {
+    width: 35rem;
+}
+.description-container p {
+    font-size: 1.6rem;
+    line-height: calc(7.7rem/3);
+    padding-bottom: 3.5rem;
+}
+.description-container .h1 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 5rem;
+    padding-top: 8.6rem;
+    padding-bottom: 4.3rem;
+}
+.btn {
+    width: 13.5rem;
+    height: 4.7rem;
+    border-radius: 4.4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+/* Media Queries */
+@media (max-width: 767px) {
+    .sea {
+        height: 81.6rem;
+   }
+    .sea .img-container {
+        max-height: 50%;
+   }
+    .sea img {
+        width: 100%;
+        object-fit: cover;
+   }
+}
+@media (max-width: 640px) {
+    :root {
+        font-size: 50%;
+   }
+}
