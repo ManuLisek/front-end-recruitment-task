@@ -5,7 +5,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import "colors";
-@import "type";
 
 @import "functions";
 @import "variables";
@@ -45,13 +44,9 @@
 @import "utilities";
 @import "print";
 
-/* Root properties*/
+/* Global*/
 :root {
     font-size: 62.5%;
-}
-/* Fonts properties */
-h1, p {
-    font-family: 'Roboto', sans-serif;
 }
 /* Reset margin and padding */
 .container, .col {
@@ -61,6 +56,9 @@ h1, p {
     margin: 0;
 }
 /* Layout properties */
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .container {
     margin-top: 10rem;
 }
@@ -69,26 +67,29 @@ h1, p {
 }
 .sea .img-container {
     height: 40.8rem;
-    overflow: hidden;
 }
 .sea img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
-.description-container {
+.border-light {
+    border-top: 1px solid;
+}
+.text-container {
     width: 35rem;
 }
-.description-container p {
+.text-container p {
     font-size: 1.6rem;
-    line-height: calc(7.7rem/3);
-    padding-bottom: 3.5rem;
+    line-height: 2.6rem;
+    padding-bottom: 3.65rem;
 }
-.description-container .h1 {
+.text-container .h1 {
     font-size: 4.2rem;
     font-weight: 700;
-    line-height: 5rem;
+    line-height: 4.9rem;
     padding-top: 8.6rem;
-    padding-bottom: 4.3rem;
+    padding-bottom: 4.1rem;
 }
 .btn {
     width: 13.5rem;
@@ -96,6 +97,7 @@ h1, p {
     border-radius: 4.4rem;
     font-size: 1.6rem;
     font-weight: 700;
+    line-height: 2.5rem;
 }
 /* Media Queries */
 @media (max-width: 767px) {
@@ -104,10 +106,6 @@ h1, p {
    }
     .sea .img-container {
         max-height: 50%;
-   }
-    .sea img {
-        width: 100%;
-        object-fit: cover;
    }
 }
 @media (max-width: 640px) {
